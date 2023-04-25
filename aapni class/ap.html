@@ -1,0 +1,294 @@
+<doctype html>
+    <html>
+        <head lang="en">
+            <title>home</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="manifest" href="manifest.json">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="shortcut icon" href="logo.png" type="image/x-icone">
+
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                body {
+                    font-family: 'PT Sans Narrow', sans-serif;
+                    background: rgb(186, 236, 186);
+                    font-weight: bold;
+                }
+                .logo img{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 200px;
+                    padding-top: 20px;
+                }
+                h1 {
+                    text-align: center;
+                    font-weight: 900;
+                    font: sans-serif;
+                    font-size: 100px;
+                    margin-top: 10px;
+                }
+                .address {
+                    text-align: center;
+                    font-weight: 900;
+                    text-decoration: underline;
+                    margin-top: 10px;
+                }
+
+                a:active, a:visited{
+                    text-decoration: none;
+                    
+                }
+                .course1 {
+                    background: rgb(104, 237, 104);
+                    padding: 10;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    margin-left: 50px;
+                }
+                .cou {
+                    text-align: center;
+                    margin-top: 150px;
+                    font-size: 25px;
+                }
+                .detail {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: rgb(104, 237, 104);
+                    margin-top: 50px;
+                    width: 50%;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                .detail li {
+                    padding-left: 10%;
+                    list-style: none;
+                    font-weight: bold;
+                    font-size: 21px;
+                }
+                .detail ul {
+                    padding-top: 15px;
+                }
+                .teachers {
+                    margin-top: 75px;
+                    text-align: center;
+                    background-color: rgb(104, 237, 104);
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 10px;
+                    width: 50%;
+                    padding: 10px;
+                    padding-bottom: 25px;
+                }
+                .teach{
+                    font-size: 350%;
+                }
+                .tec {
+                    padding-top: 10px;
+                }
+                .teacher{
+                    font-size: 200%;
+                    font-weight: bold;
+                    background-color: rgb(78, 222, 78);
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin-top: 50px;
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .b{
+                    margin-top: 100px;
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: rgb(104, 237, 104);
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                button{
+                    font-size: 25px;
+                    font-weight: bold;
+                    font-family: 'PT Sans Narrow', sans-serif;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    background-color: rgb(2, 201, 2);
+                    border-width: 1px;
+                    border-radius: 4px;
+                }
+                .update{
+                    float: right;
+                    text-align: center;
+                }
+                .map{
+                    width: 75%;
+                    margin-top: 200px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .raj, .india {
+                    width: 100;
+                }
+                .raj{
+                    float: right;
+                    width: 135;
+                }
+                .india{
+                    float: left;
+                }
+                .jai{
+                    text-align: center;
+                }
+                .q{
+                    position: relative;
+                    margin-top: 100px;
+                    text-align: center;
+                }
+                .mcou{
+                    font-size: 0px;
+                }
+                @media screen and (max-width: 600px) {
+                    
+                    h1{
+                        font-size: 0px;
+                    }
+                    .course1 {
+                    background: rgb(104, 237, 104);
+                    padding: 0;
+                    border-radius: 0px;
+                    font-weight: bold;
+                    margin-left: 0px;
+                }
+                .cou {
+                    text-align: center;
+                    margin-top: 0px;
+                    font-size: 0px;
+                }
+                    
+                    .mcou{
+                        width: 70%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 25px;
+                        padding: 10;
+                        
+                    }
+                    .mc{
+                        padding: 10px;
+                        border-radius: 10px;
+                        font-weight: bold;
+                        font-size: 25px;
+                        background-color: rgb(104, 237, 104);
+                        
+                    }
+                    .mcou > p:nth-of-type(2){
+                        margin-top: 70px;
+                    }
+                    .mc1{
+                        float: left;
+                    }
+                    .mc2{
+                        float: right;
+                    }
+                    .detail{
+                        margin-top: 100px;
+                        width: 70%;
+                    }
+                    .teachers{
+                        width: 70%;
+                    }
+                    .teacher{
+                        width: 70%;
+                    }
+                    .b{
+                        width: 70%;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <div class="logo"><img src="logo.png" alt="logo"></div>
+                <div><h1>Aapni Pathshala </h1></div>
+                <div class="address">
+                    <a href="http://"><button>Near R.U.M.V.,Rattewala</button>
+                    </a></div>
+                    <div class="q">
+                        <p><i>"Be Educated, Be Agitated, Be Organized, Be Confident, Never Give Up"</i></p>
+                        <p><i>"These Are The Five Principles Of Our Life"</i></p>
+                        <p><bold>~BY DR. B.R. AMBEDKAR</bold></p>
+                    </div>
+            </header>
+            <main>
+                <p class="cou"><span class="course1">Pre&nbsp;BSTC&nbsp;2023</span ><span class="course1">Pre&nbsp;BEd.&nbsp;2023</span><span class="course1">Special&nbsp;BSTC</span><span class="course1">4&nbsp;Year&nbsp;BSTC</span></p>
+                <div class="mcou">
+                    <p><span class="mc mc1">Pre BSTC 2023</span><span class="mc mc2">Pre BEd. 2023</span></p>
+                    <p><span class="mc mc1">Special BSTC</span><span class="mc mc2">4 Year BSTC</span></p>
+                </div>
+                <div class="detail">
+                    <div class="delh"><h2>Facility:-</h2></div>
+                    <ul>
+                        <li>Free Books</li>
+                        <li>Weekly Test</li>
+                        <li>Study by Experienced Teacher</li>
+                        <li>C.C.T.V Cameras and Condition</li>
+                        <li>Based on Previous Year Exam Question Paper</li>
+                        <li>Library arrangement 24X7, Online Form Filling arrangement</li>
+                        <li>Teaching by Experienced and Selected Subject Expert</li>
+                    </ul>
+                </div>
+                <div class="teachers">
+                    <h2 class="teach">Proved To Be Best Teacher</h2>
+                    <div class="tec">
+                    <div class="teacher">
+                        <p style="text-decoration: underline;">Manu Sir</p>
+                        <p>Lecturer Political Science M.</p>
+                        <a href="tel:+919680934498"><button>M.9680934498</button></a>
+                    </div>
+                    <div class="teacher">
+                        <p style="text-decoration: underline;">Ravi Sir</p>
+                        <p>Maths And Reasoning</p>
+                        <a href="tel:+918385939672"><button>M.8385939672</button></a>
+                    </div>
+                    <div class="teacher">
+                        <p style="text-decoration: underline;">Nandlal Sir</p>
+                        <p>G.K. Specialist</p>
+                        <a href="tel:+919587604446"><button>M.9587604446</button></a>
+                    </div>
+                    <div class="teacher">
+                        <p style="text-decoration: underline;">Lalit Sir</p>
+                        <p>Guide</p>
+                        <a href="tel:+919001859885"><button>M.9001859885</button></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="b">
+                    <a href="course.html">
+                        <button class="but" style="font-size: 30; padding-right: 10px;padding-left: 10px;">Book Seat :-</button>
+                    </a>
+                    <p class="update">Update of Seat & Timing <br>And Upcoming Course</p>
+                </div>
+            </main>
+            <footer>
+                <div class="map">
+                    <img src="india.png" alt="India" class="india">    
+                    <img src="raj.png" alt="Rajasthan" class="raj">
+                    <div class="jai">
+                        <p>JAI BHEM</p>
+                        <p>JAI BHARAT</p>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </html>
