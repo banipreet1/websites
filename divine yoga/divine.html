@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>divine yoga home
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -12,9 +15,10 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         body{
-            background-color: #f6fffe;
+            background-color: fbffff;
         }
-        p, h1, h2, h3, h4, h5, h6{
+        p, h1, h2, h3, h4, h5, h6, button, li{
+            list-style: none;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: bold;
             font-style: italic;
@@ -33,6 +37,7 @@
         .name{
             margin-top: 20px;
             text-align: center;
+            font-size: 25px;
         }
         .line{
             text-align: center;
@@ -91,29 +96,165 @@
             
             
         }
-        .exer > h2 {
-            font-size: 50px;
-            margin-left: 5%;
+        .con{
             margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            background-color:  fbffff;
+            padding: 20px;
+            height: 200px;
         }
-        .exer{
-            background-color: red;
+        .con > img {
+            height: 250px;
+            width: 250px;
+            float: left;
+            margin-left: 5%;
         }
-        .yoga{
-            padding: 5%;
-            background-color: blue;
+        .con > h3 {
+            margin-top: 75px;
+            margin-left: 50%;
+            font-size: 50px;
+            text-transform: capitalize;
         }
-        .yoga > div > div > h3 {
+        .ron {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            background-color: fbffff;
+            padding: 20px;
+            height: 200px;
+        }
+        .ron > img{
+            width: 250px;
+            height: 250px;
+            float: right;
+            margin-right: 5%;
+
+        }
+        .ron > h3 {
+            margin-top: 75px;
+            margin-left: 25%;
+            font-size: 50px;
+            text-transform: capitalize;
+        }
+        .exer > h2 {
             text-align: center;
+            font-size: 50px;
+
+            margin-bottom: 100px;
+            margin-top: 100px;
         }
-        .yoga > div > div >img {
-            width: 25%;
+        .gran{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 100px;
         }
+        .with{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 25px;
+        }
+        .heal{
+            color: rgb(0, 0, 0);
+            font-family: 'PT Sans Narrow', sans-serif;
+            padding-top: 100px;
+            margin-top: 25;
+            height: 150px;
+            background-image: url(https://th.bing.com/th/id/OIP.DFkAjpJsGfiXOpIEcU3J9wAAAA?pid=ImgDet&rs=1);
+            background-repeat: no-repeat;
+            background-position: 50%
+        }
+        .heal > p {
+            margin-top: ;
+            font-size: 50px;
+            text-align: center;
+            background-color: #f6fffe91;
+            
+        }
+        .vid {
+            display: block;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .add{
+            margin-top: 150px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .add > h2 {
+            float: left;
+            font-size: 50px;
+        }
+        .add > a { 
+            float: right;
+            margin-right: 25px;
+        }
+        .add > a > button {
+            font-weight: 900;
+            font-size: large;
+            padding: 5;
+            border-radius: 10px;
+            background-color: orange;
+            border-width: 2.5px;
+        }
+        .fee{
+            margin-top: 150px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .fee > h2{
+            text-align: center;
+            font-size: 50px;
+        }
+        .fee > .of{
+            margin-top: 25px;
+            float: left;
+        }
+        .fee > .on{
+            float: right;
+            margin-top: 25px;
+        }
+        .fee > div > h3 {
+            font-size: 1.5em;
+        }
+        /*social*/
+        .soso > h2 {
+            text-align: center;
+            font-size: 50px;
+            z-index: -1;
+        }
+        .soso1 , .soso2{
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 360px;
+        }
+
+        .q{
+            float: left;
+        }
+        .w{
+            float: left;
+        }
+        .e{
+            float: left;
+        }
+       .r{
+        float: right;
+       }
+       .q, .w, .e, .r{
+        margin-left: 25px;
+       }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo"><img src="logo.jpg" alt="logo" class="logo"></div>
+        <div class="logo"><img src="logo.png" alt="logo" class="logo"></div>
         <div class="name"><h1>DIVINE YOGA STUDIO</h1></div>
 
         <div class="head"><h2>YOGA CLASS</h2></div>
@@ -143,17 +284,83 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.7870855685507!2d73.86566774374697!3d29.92204338908319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3917b51327916f11%3A0x4cd8ba62ff9068f5!2s17%2C%2017%2C%20Adarsh%20Nagar%20Rd%2C%20P%20Block%2C%20Sri%20Ganganagar%2C%20Rajasthan%20335001!5e0!3m2!1sen!2sin!4v1682505036051!5m2!1sen!2sin" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="exer">
-            <h2>EXERCISE/YOGA</h2>
+            <h2>Y O G A</h2>
             <div class="yoga">
-                <div class="exercise">
-                    <div class="yoga1">
-                        <img src="https://www.holisticallysavvy.com/wp-content/uploads/2015/11/bigstock-Alternate-Nostril-Breathing-In-85838693-600x400.jpg" alt="">
-                        <h3>Pranayam</h3>
-                    </div>
+                <div class="con">
+                    <img src="logo.png" alt="">
+                    <h3>anusara yoga</h3>
+                </div>
+                <div class="ron">
+                    <img src="logo.png" alt="">
+                    <h3>kundalini yoga</h3>
+                </div>
+                <div class="con">
+                    <img src="logo.png" alt="">
+                    <h3>vinyasa yoga</h3>
+                </div>
+                <div class="ron">
+                    <img src="logo.png" alt="">
+                    <h3>bikram yoga</h3>
+                </div>
+                <div class="con">
+                    <img src="logo.png" alt="">
+                    <h3>hatha yoga</h3>
                 </div>
             </div>
         </div>
+        <div class="gran">
+            <h2>FUN&nbsp;LEARN&nbsp;GROW</h2>
+        </div>
+        <div class="with">
+            <h2>WITH</h2>
+        </div>
+        <div class="heal">
+            <p>
+                100% Confirm In Health Improvement   
+            </p>
+        </div>
+        <div class="">
+                <video src="video.mp4" class="vid" width="480" height="320" controls></video>
+        </div>
     </main>
-    <footer></footer>
+    <br>
+    <hr >
+    <br>
+    <footer>
+
+        <!--social meadia-->
+
+        <div class="soso">
+            <h2>Social Media</h2>
+            <ul>
+                <div class="soso1">
+                    <li class="q"><a href="#"><img src="instagram.png" alt=""></a></li>
+                <li class="w"><a href="#"><img src="facebook.png" alt=""></a></li>
+                </div>
+                <div class="soso2">
+                    <li class="e"><a href="#"><img src="twitter-sign.png" alt=""></a></li>
+                <li class="r"><a href="#"><img src="youtube.png" alt=""></a></li>
+                </div>
+            </ul>
+        </div>
+        <!--fee-->
+        <div class="fee">
+            <h2>Addmision Fee</h2>
+            <div class="of">
+                <h3>OFFLINE</h3>
+                <h3>&#8377;1000</h3>
+            </div>
+            <div class="on">
+                <h3>ONLINE</h3>
+                <h3>&#8377;900($10.9)</h3>
+            </div>
+        </div>
+
+        <div class="add">
+            <h2>ADDMISION FORM</h2>
+            <a href="#"><button>Yoga Pose Doc.</button></a>
+            <a href="#"><button>Fill Form</button></a>
+        </div>
+    </footer>
 </body>
 </html>
