@@ -13,13 +13,16 @@
         }
         body{
             background-color: cornsilk;
+            height: 2000px;
         }
         header{
-            background-color: gold;
+            background-image: linear-gradient(to right, yellow, gold);
             padding: 10px;
             padding-bottom: 25px;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
+            transition: all;
+            transition-duration: 5s;
         }
         h1 {
             color: rgb(246, 121, 3);
@@ -112,28 +115,66 @@
             
             width: 50%;
         }
+        .facility{
+            padding: 0;
+            margin: 0;
+            margin-top: 100px;
+            background-color: aliceblue;
+            width: 500px;
+            height: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all;
+            transition-duration: 2s;
+            border-radius: 10px ;
+            box-shadow: 10px 10px rgba(0, 0, 0, 0.056);
+        }
+        .facility>img{
+            width: 500px;
+            height: 500px;
+            border-radius: 10px ;
+        }
+        .facility>h2{
+            text-align: center;
+            opacity: 0;
+        }
+        .facility:hover{
+            padding: 25px;
+            border-radius: 10px ;
+            box-shadow: 10px 10px rgba(0, 0, 0, 0.056);
+        }
+        .fac{
+            text-align: center;
+            
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>SINGH P.G.</h1>
         <hr>
-        <div class="sec">
-           <p><span><a href="">Address</a></span><span class="line"> | </span>
+        <div class="sec sticky" id="sec">
+           <p><span><a href="#address">Address</a></span><span class="line"> | </span>
                 <span><a href="">Facility</a></span><span class="line"> | </span>
                 <span><a href="">Contact</a></span>
         </p>
         </div>
     </header>
     <main>
-        <div class="address">
-            <a href="https://goo.gl/maps/pmb4abmhDJUaCAgf9"><h2>ADDRESS</h2></a>
+        <div class="address" id="address">
+            <a href="https://goo.gl/maps/pmb4abmhDJUaCAgf9" target="_blank"><h2>ADDRESS</h2></a>
             <!-- i a problem here while transtion height it not doing it -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d330.91119066677174!2d73.86595581195328!3d29.922271026332442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1684343209509!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+        <div class="fac"><h2>FACILITY</h2></div>
+        <div class="facility">
+            <img src="Screenshot (4).png" alt="room">
+            <h2>2 Bed Set Room 10*12</h2>
+        </div>
     </main>
     <footer></footer>
+<!-- hi -->
 
 </body>
 </html>
