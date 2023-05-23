@@ -1,0 +1,47 @@
+.sec5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.follow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+.email {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.follow img{
+    width: 30px;
+    opacity: 25%;
+    transition: all .75s;
+}
+.follow img:hover{
+    opacity: 100%;
+}
+.resume {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.resume-btn{
+    margin-left: 10%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2.5px solid red ;
+    transition: all .5s ease-in;
+    margin-bottom: 10px;
+}
+.resume-btn:hover{
+    color: black;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 10px 10px 50px rgba(246, 114, 114, 0.405),
+        -10px -10px 50px rgba(240, 114, 114, 0.464),
+        -10px 10px  50px rgba(255, 121, 121, 0.419),
+        10px -10px  50px rgba(248, 117, 117, 0.44);
+}
