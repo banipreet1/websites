@@ -45,3 +45,17 @@
         -10px 10px  50px rgba(255, 121, 121, 0.419),
         10px -10px  50px rgba(248, 117, 117, 0.44);
 }
+.joue{
+    text-align: center;
+}
+.jouend {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: blueviolet;
+    border: 2.5px solid blueviolet;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.jouend:hover{
+    background-color: blueviolet;
+}
