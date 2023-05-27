@@ -1,33 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
-            text-align: center;
-            text-transform: uppercase;
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
         }
-        .form{
-            background-color: aqua;
+        body{
+            background-color: rgb(31, 31, 31);
+        }
+        .container{
             margin-left: auto;
             margin-right: auto;
-            width: 75%;
-            height: 100px;
+            padding-top: 50px;
+            height: 2125px;
+            width: 1025px;
+            background-color: rgb(56, 58, 60);
+            padding: 50px;
+        }
+    </style>
+    <style>
+        /* section */
+        .sec{
+            border-radius: 50px;
+        }
+        .child1{
+            height: 525px;
+            width: 500px;
+            background-color: rgb(219, 139, 19);
+        }
+        .child2{
+            height: 250px;
+            width: 500px;
+            background-image: url(https://www.apple.com/v/iphone-14-pro/h/images/key-features/features/main-camera/camera_deep_purple__fviv8fv1dyqa_large.jpg);
+            margin-bottom: 25px;
+        }
+        .child3{
+            height: 250px;
+            width: 500px;
+            background-image: url(https://www.apple.com/v/iphone-14-pro/h/images/key-features/features/chip/chip_deep_purple__bs3dtgitlt6q_large.jpg);
+            background-repeat: no-repeat;
+            padding: 15%;
+        }
+        .child4{
+            width: 250px;
+            height: 250px;
+            background-color: brown;
+        }
+        .child5{
+            width: 750px;
+            height: 250px;
+            background-color: chartreuse;
+        }
+        .child6{
+            width: 250px;
+            height: 500px;
+            background-color: rgb(63, 42, 165);
+        }
+        .child7{
+            width: 750px;
+            height: 500px;
+            background-color: rgb(255, 0, 140);
+        }
+        .child8{
+            height: 250px;
+            width: 500px;
+            background-color: rgb(0, 162, 255);
+            margin-bottom: 25px;
+        }
+        .child9{
+            height: 250px;
+            width: 500px;
+            background-color: rgb(101, 112, 65); 
+        }
+        .child10{
+            height: 525px;
+            width: 500px;
+            background-color: rgb(219, 139, 19);
+        }
+        .child12{
+            width: 250px;
+            height: 250px;
+            background-color: rgb(225, 25, 25);
+        }
+        .child11{
+            width: 750px;
+            height: 250px;
+            background-color: rgb(0, 255, 153);
+        }
+    </style>
+    <style>
+        .space{
+            height: 525px;
+        }
+        .box1{
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        .box2{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+        .box3{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .box4{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+        .box5{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        a span{
+            font-weight: 900;
+            font-size: 50px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            border: 2.5px solid black;
+            color: black;
+
+        }
+        .a{
+            margin-top: 90%;
+            margin-left: 85%;
+            
+        }
+        
+    </style>
+    <!-- style -->
+    <style>
+        .child1 h1{
+            text-align: center;
+            margin-top: 10px;
+
         }
     </style>
 </head>
+
 <body>
-    <h1>sign up page</h1>
-    <div class="form">
-        <div class="pic">
-            <h2>welcome to page</h2>
-            <h2>sign up page</h2>
-            <h3>www.welcometopage.com</h3>
+    <div class="container">
+
+        <div class="box1">
+            <div class="child1 sec">
+                <h1>Meet
+                    Dynamic Island.</h1>
+                <div class="a"><a href="#" style="margin-top: 500px;"><span>&nbsp;&gt;&nbsp;</span></a></div>
+            </div>
+            <div class="space">
+                <div class="child2 sec"></div>
+            <div class="child3 sec"></div>
+            </div>
+        </div >
+        <!-- box1 end box2 start -->
+        <div class="box2">
+            <div class="child4 sec"></div>
+            <div class="child5 sec"></div>
         </div>
-        <div class="sign"></div>
+        <!-- box1 end & box3 start -->
+        <div class="box2 box3">
+            <div class="child6 sec"></div>
+            <div class="child7 sec"></div>
+        </div>
+        <!-- box3 end & box4 -->
+        <div class="box4">
+            <div class="space2">
+                <div class="child8 sec"></div>
+                <div class="child9 sec"></div>
+            </div>
+            <div class="child10 sec"></div>
+        </div>
+        <!-- box4 end & box5 start -->
+        <div class="box5">
+            <div class="child11 sec"></div>
+            <div class="child12 sec"></div>
+        </div>
     </div>
 </body>
+
 </html>
