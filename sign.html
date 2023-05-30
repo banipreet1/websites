@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(to right, rgb(179, 255, 0) 0%, rgb(217, 210, 7) 35%, rgb(230, 112, 112) 100%);
+        }
+
+        h1 {
+            font-family: "Verdana", sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 100px;
+            background: rgb(255, 254, 254);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            border: 2px solid;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(240, 255, 255, 0.467);
+            margin-top: 75px;
+        }
+
+        .sec {
+            width: 500px;
+            height: 600px;
+        }
+
+        form {
+            margin-top: 50px;
+        }
+
+        #signup,
+        #signin {
+            width: 500px;
+        }
+
+        .sec1 {
+            background: url("picture/sp1.jpg");
+            background-size: cover;
+        }
+
+        /* sign up */
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 50px;
+            margin-top: 10px;
+            opacity: 100%;
+
+        }
+
+        #signup,
+        #signin {
+            text-align: center;
+        }
+
+        nav {
+            width: 500px;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+
+        
+
+        #signup input,
+        #signin input {
+            margin-bottom: 25px;
+            border: 0px;
+            background-color: rgba(240, 248, 255, 0.481);
+            padding: 5px;
+            border-radius: 5px;
+            transition: all .3s;
+        }
+
+        #signup input:hover,
+        #signin input:hover {
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 15PX;
+            box-shadow: 15px 15px rgba(0, 0, 0, 0.133);
+        }
+
+        #signup input[type=radio],
+        #signin input[type=radio] {
+            margin-top: 100px;
+            transition: none;
+            box-shadow: none;
+        }
+
+        input[type=submit]:hover {
+            width: 250px;
+        }
+
+        p a button,
+        p a button {
+            border: 0px;
+            padding-left: 2px;
+            padding-right: 2px;
+            color: blue;
+            background-color: rgba(240, 248, 255, 0);
+            transition: all;
+            transition-duration: .3s;
+
+        }
+
+        p a button:hover,
+        p a button:hover {
+            color: aliceblue;
+            background-color: blue;
+        }
+
+        #signin input[type=submit] {
+            margin-top: 290px;
+        }
+
+        .sec2 nav {
+            display: flex;
+
+        }
+
+        .signup,
+        .signin {
+            text-align: center;
+        }
+
+        /* sec1 */
+        .sec1 p {
+            text-align: right;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .sec1 h2 {
+            margin-top: 85px;
+        }
+
+        .sec1 a {
+            position: absolute;
+            margin-left: 58px;
+            margin-top: 317px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .sec1 a:hover {
+            color: #7928CA;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class="container">
+            <div class="sec1 sec">
+
+                <p>BANIPREET's PORTFOLIO</p>
+                <h2><span id="change">SIGN UP</span> for browse more </h2>
+                <a href="index.html">GO BACK</a>
+
+            </div>
+
+            <div class="sec2 sec">
+
+                <nav>
+                    <div class="signup" id="up">
+                        <h2>sign up </h2>
+                        <hr>
+                        <form id="signup">
+                            <input type="text" placeholder="NAME"> <br>
+                            <input type="email" name="sdad" placeholder="EMAIL" id="sdf"> <br>
+                            <input type="tel" name="dsf" placeholder="PHONE NO" id="ddsf"> <br>
+                            <input type="password" name="sdf" placeholder="PASSWORD" id="zx"> <br>
+                            <input type="password" name="zz" placeholder="CONFIRM PASSWORD" id="aa"> <br>
+                            <input type="radio" name="qw" id="we"> &nbsp;<span>YES, I am agree with <a href="">Term and
+                                    Condition</a></span> <br>
+                            <input type="submit" value="SIGN UP"> <br>
+                        </form>
+                        <p>I have an <a href="#in"><button type="button" onclick="signin()">account</button></a> </p>
+                    </div>
+
+                    <div class="signin" id="in">
+                        <h2>SIGN IN</h2>
+                        <hr>
+                        <form action="" id="signin">
+                            <input type="text" name="jhk" placeholder="NAME/TELPHONE/EMAIL" id="saaa"><br>
+                            <input type="password" name="uy" placeholder="PASSWORD" id="dssd"><br>
+                            <input type="submit" value="SIGN IN">
+                        </form>
+                        <p>I don't have an <a href="#up"><button type="button" onclick="signup()" >account</button></a></p>
+                    </div>
+                </nav>
+
+
+            </div>
+            <script>
+                function signin() {
+                    document.getElementById("change").innerHTML = "SIGN IN";
+                }
+                function signup() {
+                    document.getElementById("change").innerHTML = "SIGN UP";
+                }
+            </script>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
