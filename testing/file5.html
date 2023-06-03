@@ -60,10 +60,23 @@ input{
                    
                     document.getElementById("cal").value = aa
             }
+            function calfunction()
+        {
+            var aa = document.getElementById("cal").value;
+            var v = eval(aa)
+            document.getElementById('cal').value = v
+        }
 
     </script>
 
-
+    <!-- <script>
+        function clickfunction()
+        {
+            var aa = document.getElementById("cal").value;
+            var v = eval(aa)
+            document.getElementById('cal').value = v
+        }
+    </script> -->
 
 </head>
 <body>
@@ -77,25 +90,25 @@ input{
                 <button class="btn b1" onclick="clickfunction(1)">1</button>
                 <button class="btn b2" onclick="clickfunction(2)">2</button>
                 <button class="btn b3" onclick="clickfunction(3)">3</button>
-                <button class="btn div" onclick="clickfunction(1)">&#247;</button>
+                <button class="btn div" onclick="clickfunction('/')">&#247;</button>
             </div>
             <div class="btns2">
                 <button class="btn b4" onclick="clickfunction(4)">4</button>
                 <button class="btn b5" onclick="clickfunction(5)">5</button>
                 <button class="btn b6" onclick="clickfunction(6)">6</button>
-                <button class="btn" onclick="clickfunction(*)">x</button>
+                <button class="btn" onclick="clickfunction('*')">x</button>
             </div>
             <div class="btns3">
                 <button class="btn b7" onclick="clickfunction(7)">7</button>
                 <button class="btn b8" onclick="clickfunction(8)">8</button>
                 <button class="btn b9" onclick="clickfunction(9)">9</button>
-                <button class="btn" onclick="clickfunction(1)">-</button>
+                <button class="btn" onclick="clickfunction('-')">-</button>
             </div>
             <div class="btns4">
                 <button class="btn ">c</button>
                 <button class="btn b0" onclick="clickfunction(0)">0</button>
-                <button class="btn" onclick="clickfunction(p)">.</button>
-                <button class="btn" onclick="clickfunction()">+</button>
+                <button class="btn" onclick="calfunction()">=</button>
+                <button class="btn" onclick="clickfunction('+')">+</button>
             </div>
         </div>
 
