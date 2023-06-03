@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex align</title>
+    <style>
+        .container {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: linear-gradient(rgb(61, 202, 245) ,rgb(249, 156, 207));
+            width: 420px;
+            border-radius: 2px;
+            border-style: dashed;
+        }
+
+        .child1 {
+            padding: 25px;
+            width: 100px;
+        }
+
+       .child2{
+        padding-top: 25px;
+        width: 290px;
+        
+       }
+       .child2 div{
+        margin-bottom: 25px;
+       }
+       .child1 div:nth-child(2){margin-top: 30px;}
+       .child1 div:nth-child(3){margin-top: 30px;}
+       .child1 div:nth-child(4){margin-top: 30px;}
+       .child1 div:nth-child(5){margin-top: 25px;}
+       .child1 div:nth-child(6){margin-top: 30px;}
+       .child1 div:nth-child(7){margin-top: 100px;}
+       .child1 div:nth-child(8){margin-top: 95px;}
+       .child1 div:nth-child(9){margin-top: 30px;}
+       .child1 div:nth-child(10){margin-top: 25px;}
+       .child1 div:nth-child(11){margin-top: 30px;}
+       .child1 div:nth-child(12){margin-top: 30px;}
+       .child1 div:nth-child(13){margin-top: 90px;}
+       .child1 div:nth-child(14){margin-top: 140px;}
+       .sub{
+        word-spacing: 25px;
+       }
+
+
+       container {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    border: 1px dashed #999;
+    display: inline-block;
+    width: 200px;
+    padding: 5px;
+    font-size: 150%;
+}
+
+/* The letter and the container rotate at the same speed */ 
+.container1,
+.letter {
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+/* But the letter rotates in opposite direction */ 
+.letter {
+    -webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+    animation-direction: reverse;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <span class="letter">GLOBAL INSTITUE</span>
+    </div>
+
+
+    <div class="container">
+        <div class="child child1">
+
+            <div><label for="">name</label><br></div>
+            <div><label for="">last name</label><br></div>
+            <div><label for="">email</label><br></div>
+            <div><label for="">mobile</label><br></div>
+            <div><label for="">gender</label><br></div>
+            <div><label for="">dob</label><br></div>
+            <div><label for="">address</label><br></div>
+            <div><label for="">city</label><br></div>
+            <div><label for="">pin code</label><br></div>
+            <div><label for="">state</label><br></div>
+            <div><label for="">country</label><br></div>
+            <div><label for="">hobbies</label><br></div>
+            <div><label for="">qualification</label><br></div>
+            <div><label for="">course applied</label></div>
+        </div>
+        <div class="child child2">
+            <div><input type="text" name="" id=""></div>
+            <div><input type="text" name="" id=""></div>
+            <div><input type="text" name="" id=""></div>
+            <div><input type="text" name="" id=""></div>
+            <div><input type="radio" name="" id=""><label for="">male</label><input type="radio" name="" id="">female
+            </div>
+            <div><input type="date" name="" id=""></div>
+            <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
+            <div class="sec"><input type="text" name="" id=""></div>
+            <div class="sec"><input type="number" name="" id=""></div>
+            <div class="sec"><input type="text" name="" id=""></div>
+            <div class="sec"><input type="text" name="" id=""></div>
+            <div class="sec">
+                <input type="checkbox" name="hobbies" id="">
+                <label for="">drawing</label>
+                <input type="checkbox" name="hobbies" id="">
+                <label for="">singing</label>
+                <input type="checkbox" name="hobbies" id="">
+                <label for="">dancing </label>
+                <input type="checkbox" name="hobbies" id="">
+                <label for="">other</label>
+                <input type="text" name="hobbies" id=""><br>
+            </div>
+            <div class="sec">
+                <input type="radio" name="graduation" id="">
+                <label for="">10th</label><br>
+                <input type="radio" name="graduation" id="">
+                <label for="">12th</label><br>
+                <input type="radio" name="graduation" id="">
+                <label for="">graduation</label><br>
+                <input type="radio" name="graduation" id="">
+                <label for="">post graduation</label><br>
+                <input type="radio" name="graduation" id="">
+                <label for="">P.hd</label>
+            </div>
+            <div class="sec">
+                <input type="radio" name="apply" id="">
+                <label for="">bca</label> <br>
+                <input type="radio" name="apply" id="">
+                <label for="">B.com</label> <br>
+                <input type="radio" name="apply" id="">
+                <label for="">B.sc</label> <br>
+                <input type="radio" name="apply" id="">
+                <label for="">ba</label> <br>
+                <input type="radio" name="apply" id="">
+                <label for="">Mca</label> <br>
+                <input type="radio" name="apply" id="">
+                <label for="">M.com</label> <br>
+                <input type="radio" name="apply" id="">
+                <label for="">B.sc</label> <br>
+                <input type="radio" name="apply" id="">
+                <label for="">MA</label> <br>
+            </div>
+            <div class="sub">
+                <input type="button" value="submit">
+                <input type="reset" value="reset">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
