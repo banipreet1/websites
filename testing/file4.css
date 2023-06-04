@@ -102,5 +102,53 @@ a{
     font-size: 150px;
     color: rgb(202, 172, 112);
     opacity: 75%;
+    z-index: -100;
 }
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    z-index: 10;
+    margin-bottom: 50px;
+}
+.menu .child a img{
+    height: 400px;
+    width: 350px;
+    background-color: aqua;
+}
+.menu .child2{
+    margin-top: -100px;
+    z-index: 10;
+}
+.menu .child a h3{
+    font-size: 30px;
+    text-align: center;
+}
+.sec3 .child h4{
+    color: rgb(202, 172, 112);
 
+}
+.sec3 .child h2{
+    font-size: 60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.sec3 .child h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.sec3 .child p{
+    font-size: 25px;
+}
+.sec3 .child2 img, .sec4 .child1 img{
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+}
+.sec3 {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
