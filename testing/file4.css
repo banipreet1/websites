@@ -238,9 +238,8 @@ a{
 .sec6{
     margin-top: 100px;
 }
-.sec6 video{
+.sec6 iframe{
     height: 550px;
-    background-color: aqua;
     width: 100%;
 }
 .sec7 {
@@ -333,3 +332,6 @@ border-radius: 50%;
 .foot2 .child3{
     text-align: right;
 } 
+video button{
+
+}
