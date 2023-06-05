@@ -12,3 +12,13 @@
 .menu .child:hover { padding: 50px;
     border: 2px solid rgb(202, 172, 112);
 }
+.sec5 .child2 .kid:hover{
+    background-color: wheat;
+}
+.sec7> a:hover{
+background-color: rgb(202, 172, 112);
+color: aliceblue;
+}
+.logo img:hover{
+background-color: rgb(202, 172, 112);
+}

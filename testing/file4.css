@@ -224,7 +224,6 @@ a{
 
   }
 .kid img{
-    background-color: aqua;
     height: 300px;
     width: 300px;
 
@@ -233,6 +232,7 @@ a{
     font-size: 25px;
 }
 .kid {
+    padding: 10px;
     text-align: center;
 }
 .sec6{
@@ -243,3 +243,93 @@ a{
     background-color: aqua;
     width: 100%;
 }
+.sec7 {
+    text-align: center;
+    padding-top: 100px;
+
+}
+.sec7 h2{
+    font-size: 45px;
+}
+.sec7 .child2{
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    text-align: left;
+padding-bottom: 50px;
+}
+.blog{
+    word-spacing: 10px;
+}
+.sec7 .child2 .blog .pic div {
+background-color: aqua;
+height: 300px;
+width: 300px;
+text-align: left;
+}
+.sec7 .child2 .blog a div span{
+    text-align: left;
+    padding: 10px;
+    background-color: antiquewhite;
+    margin-left: 20px;
+
+}
+.sec7 .child2 .blog .title {
+    margin-left: 0px;
+    font-size: 30px;
+}
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.sec7 > a{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgb(202, 172, 112);
+
+}
+.foot1{
+    height: 300px;
+    margin-top: 100px;
+}
+.foot2{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    padding-top: 150PX;
+    padding-bottom: 150PX;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot2 a{
+    color: aliceblue;
+}
+.foot2> .child1 >img{
+    width: 250px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.logo img{
+width: 30px;
+border: 1px solid rgb(202, 172, 112);
+padding: 10px;
+border-radius: 50%;
+}
+.day{
+    color: rgb(202, 172, 112);
+}
+.foot2  .child2 {
+    text-align: center;
+}
+.foot2 .child3{
+    text-align: right;
+} 
