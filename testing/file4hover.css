@@ -1,0 +1,14 @@
+.head ul li a:hover {
+    text-decoration: underline;
+}
+.intro .front a:hover,.sec4 .child2 span a:hover{
+    color: aliceblue;
+    background-color: rgb(202, 172, 112);
+}
+.menu .child:hover a img{
+    width: 262.5px;
+    height: 300px;
+}
+.menu .child:hover { padding: 50px;
+    border: 2px solid rgb(202, 172, 112);
+}

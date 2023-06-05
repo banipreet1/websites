@@ -1,3 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: all ;
+    transition-duration: 1s;
+}
+
+body {
+    height: 1000px;
+    background-color: rgb(252, 248, 244);
+}
+
+.top {
+    background-color: rgb(38, 38, 38);
+    top: 0px;
+    height: 50px;
+    position: fixed;
+    padding: 5px;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.top h1 {
+    margin-left: 25px;
+    float: left;
+}
+
+.fix {
+    position: fixed;
+    bottom: 100px;
+    rotate: -90deg;
+    right: -30px;
+}
 .top a{
     text-decoration: none;
     color: aliceblue;
@@ -136,7 +172,7 @@ a{
 .sec3 .child h3{
     font-size: 35px;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .sec3 .child p{
     font-size: 25px;
@@ -148,7 +184,62 @@ a{
 }
 .sec3 {
     margin-top: 150px;
+    gap: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.sec4 {
+    margin-top: 50px;
+    background-color: rgb(134, 100, 73);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+    gap: 100px;
+}
+.sec4 .child2 h2{font-size: 40px;}
+.sec4 .child2 * { margin-bottom: 25px;}
+.sec4 .child2 span a{
+    padding: 10px;
+    border: 2px solid rgb(202, 172, 112);
+}
+.checked {
+    color: orange;
+  }
+  .sec5 {
+    text-align: center;
+    padding-top: 100px;
+
+  }
+  .sec5 h2{
+    margin-top: 50px;
+    font-size: 45px;
+  }
+  .sec5 .child2 {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+.kid img{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+
+}
+.kid h2{
+    font-size: 25px;
+}
+.kid {
+    text-align: center;
+}
+.sec6{
+    margin-top: 100px;
+}
+.sec6 video{
+    height: 550px;
+    background-color: aqua;
+    width: 100%;
 }
