@@ -1,0 +1,24 @@
+.carddesign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+.carddesign a{
+    color: black;
+}
+.carddesign .custom {
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+}
+.carddesign .custom div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100px;
+    width: 200px;
+}

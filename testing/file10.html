@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="file10.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 150px;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sec {
+            height: 350px;
+            width: 50%;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .sec1 {
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sec2 {
+            background-color: tomato;
+            overflow-y: scroll;
+        }
+        .card {
+            background-color: aqua;
+            width: 500px;
+            height: 250px;
+            padding: 10px;
+            margin-top: 25px;
+            background-size: cover;
+        }
+        .card h3 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card img {
+            float: left;
+            background-color: blueviolet;
+            width: 125px;
+            height: 125px;
+        }
+
+        .card h3 {
+            margin-bottom: 14px;
+        }
+
+    </style>
+    <script>
+
+        function insertname() {
+            a = document.getElementById("name").value
+            document.getElementById("ename").innerHTML = a;
+        }
+        function insertpro() {
+            b = document.getElementById("pro").value
+            document.getElementById("epro").innerHTML = b;
+        }
+        function insertcon() {
+            c = document.getElementById("cont").value
+            document.getElementById("econt").innerHTML = c;
+        }
+        function about() {
+            c = document.getElementById("ab").value
+            document.getElementById("eab").innerHTML = c;
+        }
+        // font
+        function font1() {
+            f = document.getElementById("font1").value
+            document.getElementById("ename").style.fontFamily = f;
+            document.getElementById("edob").style.fontFamily = f;
+            document.getElementById("epro").style.fontFamily = f;
+            document.getElementById("econt").style.fontFamily = f;
+            document.getElementById("eab").style.fontFamily = f;
+            document.getElementById("about").style.fontFamily = f;
+        }
+        function font2() {
+            f = document.getElementById("font2").value
+            document.getElementById("ename").style.fontFamily = f;
+            document.getElementById("edob").style.fontFamily = f;
+            document.getElementById("epro").style.fontFamily = f;
+            document.getElementById("econt").style.fontFamily = f;
+            document.getElementById("eab").style.fontFamily = f;
+            document.getElementById("about").style.fontFamily = f;
+        }
+        function font3() {
+            f = document.getElementById("font3").value
+            document.getElementById("ename").style.fontFamily = f;
+            document.getElementById("edob").style.fontFamily = f;
+            document.getElementById("epro").style.fontFamily = f;
+            document.getElementById("econt").style.fontFamily = f;
+            document.getElementById("eab").style.fontFamily = f;
+            document.getElementById("about").style.fontFamily = f;
+        }
+        function insertdob() {
+            dob = document.getElementById("dob").value
+            document.getElementById("edob").innerHTML = dob;
+        }
+        function insertpic() {
+            pic = document.getElementById("pic").value
+            document.getElementById("photo").src = pic;
+        }
+        function ccbg(){
+            a = document.getElementById("iccolor").value
+            document.getElementById("card").style.backgroundColor = a ;
+        }
+        function ccimg(){
+            a = document.getElementById("icimg").value
+            document.getElementById("card").style.backgroundImage = "url" + "(" + a + ")" ;
+        }
+        function fontcolor(){
+            f = document.getElementById("fontcolor").value
+            document.getElementById("ename").style.color = f;
+            document.getElementById("edob").style.color = f;
+            document.getElementById("epro").style.color = f;
+            document.getElementById("econt").style.color = f;
+            document.getElementById("eab").style.color = f;
+            document.getElementById("about").style.color = f;
+        }
+        function imgradus(){
+            a = document.getElementById("picradus").value
+            document.getElementById("photo").style.borderRadius = a +"%" ;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Design maker</h1>
+    </header>
+    <main>
+        <section class="sec sec1 ">
+            <h2>CARD</h2>
+            <div class="card" id="card">
+                <img src="" alt="person picture" id="photo" loading="lazy">
+                <h3 id="ename">-</h3>
+                <h3 id="epro">-</h3>
+                <h3 id="edob">-</h3>
+                <h3 id="econt">-</h3>
+                <h3 id="about">ABOUT ME</h3>
+                <h3 id="eab">-</h3>
+            </div>
+        </section>
+        <section class="sec sec2 con">
+            <nav>
+                <h2>input</h2>
+                <div class="input">
+                    <h3>Name</h3>
+                    <input type="text" name="" onkeyup="insertname()" id="name" placeholder="Name">
+                </div>
+                <div class="input">
+                    <h3>Profession</h3>
+                    <input type="text" onkeyup="insertpro()" id="pro">
+                </div>
+                <div class="input">
+                    <h3>DOB</h3>
+                    <input type="date" onkeyup="insert()" name="" id="dob"> <br>
+                    <button onclick="insertdob()">enter</button>
+
+                </div>
+                <div class="input">
+                    <h3>Contact no</h3>
+                    <input type="tel" name="" onkeyup="insertcon()" id="cont">
+                </div>
+
+                <div class="font">
+                    <h3>font</h3>
+                    <label for="">1</label>
+                    <input type="radio" name="font" id="font1" checked onclick="font1()"
+                        value="Arial, Helvetica, sans-serif">
+                    <label for="">2</label>
+                    <input type="radio" name="font" id="font2" onclick="font2()"
+                        value="'Courier New', Courier, monospace">
+                    <label for="">3</label>
+                    <input type="radio" name="font" id="font3" onclick="font3()" value="fantasy">
+
+                </div>
+                <div class="ab">
+                    <h3>About you</h3>
+                    <input type="text" name="" id="ab" onkeyup="about()">
+                </div>
+                <div class="img">
+                    <h3> your picture (image url)</h3>
+                    <input type="url" onkeyup="insertpic()" id="pic"><br><br>
+                    <input type="number" name="" id="picradus" onkeyup="imgradus()" placeholder="xx%">
+                </div>
+                <div class="carddesign">
+                    <h3>Card Customization</h3>
+                    <h4><a href="#ccolor">Color</a> / <a href="#cimg">image</a></h4>
+                    <div class="custom">
+                        <div class="ccolor" id="ccolor">
+                            <h4>Color of Card</h4>
+                            <input type="color" id="iccolor">
+                            <button onclick="ccbg()">select</button>
+                        </div>
+                        <h4>Background of Color</h4>
+                        <div class="cimg" id="cimg" >
+                            <h4>Image url</h4>
+                            <input type="url" name="" id="icimg" onkeyup="ccimg()">
+                        </div>
+                    </div>
+                </div>
+                <div class="fontcolor">
+                    <h4>Font Color</h4>
+                    <input type="color" name="" id="fontcolor">
+                    <br>
+                    <button onclick="fontcolor()">Submit</button>
+                    
+                </div>
+            </nav>
+           
+        </section>
+    </main>
+    <script>
+
+    </script>
+</body>
+
+</html>

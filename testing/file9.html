@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .feild {
+            width: 100%;
+            background-color: rgb(223, 201, 175);
+            height: 500px;
+        }
+
+        .control {
+            padding-top: 75px;
+            text-align: center;
+        }
+
+        .control button {
+            height: 25px;
+            width: 25px;
+
+        }
+
+        .player {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function up() {
+
+            document.getElementById("player").style.marginTop = -20 + "px";
+        }
+        function left() {
+
+            
+            document.getElementById("player").style.marginLeft = -20 + "px";
+        }
+        function right() {
+            var a = 100
+            document.getElementById("player").style.marginLeft = 20 + "px";
+        }
+        function down() {
+            var a = 100
+            document.getElementById("player").style.marginTop = 20 + "px";
+        }
+        function pow() {
+            var a = document.getElementById("color").value
+            document.getElementById("player").style.backgroundColor = a;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>GAME</h1>
+    </header>
+    <main>
+        <section class="feild">
+            <div class="player" id="player"></div>
+        </section>
+        <section class="control">
+            <div class="con"><button onclick="up()">^</button></div>
+            <div class="con"><button onclick="left()">&lt;</button><button onclick="pow()">o</button><button
+                    onclick="right()">&gt;</button></div>
+            <div class="con"><button onclick="down()">v</button></div>
+            <br>
+            <div class="con pow"><input type="color" name="" id="color"></div>
+        </section>
+    </main>
+</body>
+
+</html>
