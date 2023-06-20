@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design</title>
     <link rel="stylesheet" href="file10.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,11 +16,12 @@
         h1{
             text-align: center;
             font-size: 75px;
-            margin-bottom: 100px;
+            font-family: 'Bungee', cursive;;
         }
         main {
             display: flex;
             justify-content: center;
+            margin-top: 50px;
         }
 
         .sec {
@@ -139,16 +141,39 @@
             a = document.getElementById("picradus").value
             document.getElementById("photo").style.borderRadius = a +"%" ;
         }
+        function updateTime() {
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+
+  // Add leading zeros to minutes and seconds
+  minutes = (minutes < 10 ? "0" : "") + minutes;
+  seconds = (seconds < 10 ? "0" : "") + seconds;
+
+  // Format the time as HH:MM:SS
+  var timeString = hours + ":" + minutes + ":" + seconds;
+
+  // Update the clock div
+  document.getElementById("clock").innerHTML = timeString;
+}
+
+// Update the time every second
+setInterval(updateTime, 1000);
+
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <h1>Design maker</h1>
+        <h1 id="clock" style="font-size: 25px;"></h1>
     </header>
     <main>
         <section class="sec sec1 ">
-            <h2>CARD</h2>
+            <h2 >CARD</h2>
             <div class="card" id="card">
                 <img src="" alt="person picture" id="photo" loading="lazy">
                 <h3 id="ename">&lt;NAME&gt;</h3>
@@ -201,7 +226,7 @@
                     <h3> your picture (image url)</h3>
                     <input type="url" onkeyup="insertpic()" id="pic" placeholder="form google drive or anywhere"><br><br>
                     <h3>Image Radius</h3>
-                    <input type="number" name="" id="picradus" onkeyup="imgradus()" placeholder="xx%">
+                    <input type="number" name="" id="picradus" onkeyup="imgradus()" placeholder="0% - 50%">
                 </div>
                 <div class="carddesign">
                     <h3>Card Customization</h3>
