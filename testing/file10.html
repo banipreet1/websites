@@ -14,7 +14,8 @@
         }
         h1{
             text-align: center;
-            margin-bottom: 150px;
+            font-size: 75px;
+            margin-bottom: 100px;
         }
         main {
             display: flex;
@@ -150,10 +151,10 @@
             <h2>CARD</h2>
             <div class="card" id="card">
                 <img src="" alt="person picture" id="photo" loading="lazy">
-                <h3 id="ename">-</h3>
-                <h3 id="epro">-</h3>
-                <h3 id="edob">-</h3>
-                <h3 id="econt">-</h3>
+                <h3 id="ename">&lt;NAME&gt;</h3>
+                <h3 id="epro">&lt;PROFESSION&gt;</h3>
+                <h3 id="edob">&lt;DOB&gt;</h3>
+                <h3 id="econt">&lt;CONTACT&gt;</h3>
                 <h3 id="about">ABOUT ME</h3>
                 <h3 id="eab">-</h3>
             </div>
@@ -198,11 +199,13 @@
                 </div>
                 <div class="img">
                     <h3> your picture (image url)</h3>
-                    <input type="url" onkeyup="insertpic()" id="pic"><br><br>
+                    <input type="url" onkeyup="insertpic()" id="pic" placeholder="form google drive or anywhere"><br><br>
+                    <h3>Image Radius</h3>
                     <input type="number" name="" id="picradus" onkeyup="imgradus()" placeholder="xx%">
                 </div>
                 <div class="carddesign">
                     <h3>Card Customization</h3>
+                    <h4>Background of Color</h4>
                     <h4><a href="#ccolor">Color</a> / <a href="#cimg">image</a></h4>
                     <div class="custom">
                         <div class="ccolor" id="ccolor">
@@ -210,7 +213,6 @@
                             <input type="color" id="iccolor">
                             <button onclick="ccbg()">select</button>
                         </div>
-                        <h4>Background of Color</h4>
                         <div class="cimg" id="cimg" >
                             <h4>Image url</h4>
                             <input type="url" name="" id="icimg" onkeyup="ccimg()">
