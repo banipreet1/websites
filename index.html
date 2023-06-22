@@ -682,10 +682,33 @@
             <i style="color: blueviolet; text-align:center;margin-top: 100px; margin-bottom: 50px;">the end</i>
 
         </section>
+        <div class="time">
+            <h1 id="clock" style="font-size: 25px; display: inline; background-color: blueviolet;padding: 5px; border-radius: 10px;position: fixed;z-index: 1000000000; bottom: 10px; left: 10px;"></h1>
+        </div>
     </footer>
     <!-- script -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
+                function updateTime() {
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+
+  // Add leading zeros to minutes and seconds
+  minutes = (minutes < 10 ? "0" : "") + minutes;
+  seconds = (seconds < 10 ? "0" : "") + seconds;
+
+  // Format the time as HH:MM:SS
+  var timeString = hours + ":" + minutes + ":" + seconds;
+
+  // Update the clock div
+  document.getElementById("clock").innerHTML = timeString;
+}
+
+// Update the time every second
+setInterval(updateTime, 1000);
+
         var typed = new Typed('#element', {
             strings: ['BANI preet', 'बानी प्रीत', 'ਬਾਣੀ ਪ੍ਰੀਤ', 'Бани преет', 'バニ プリート', 'ಬಾನಿ ಪ್ರೀತ್', '巴尼 預先', 'BANI preet'],
             typeSpeed: 50,
