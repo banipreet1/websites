@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.top{
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+.top img {
+    height: 125px;
+    width: 125px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: all 1s;
+}
+.top h1{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+.top h1 span:nth-child(1){
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: red;
+        transition: all 1s;
+
+}
+.top h1 span:nth-child(2){
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: white;
+        transition: all 1s;
+
+}
+.top h1 span:nth-child(3){
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: red;
+        transition: all 1s;
+
+}
+header h2{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.form {
+    background-color: bisque;
+    margin: auto;
+    width: 680px;
+    height: 1000px;
+    padding: 25px;
+    border-radius: 70px;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+
+
+/* hover */
+
+.top:hover h1 span:nth-child(1){
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.top:hover h1 span:nth-child(3){
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.top:hover h1 span:nth-child(2){
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+.top:hover img{
+    border-radius: 0%;
+}
+.form:hover {
+    border-radius: 0px;
+    background-color: rgb(255, 195, 122);
+}

@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        form{
+        form {
             background-color: aquamarine;
-            width: 170px ;
+            width: 170px;
             padding: 10px;
             border-radius: 10px;
         }
+
         input[type="submit"] {
             background-color: antiquewhite;
             display: block;
             margin-left: 60px;
             text-align: center;
         }
-        section{
-            display: flex;
-
-            justify-content: center;
-        }
     </style>
+    <script>
+        function submit() {
+            let a = document.getElementById("name").value;
+            let b = document.getElementById("email").value;
+            let c = document.getElementById("tel").value;
+
+            if (a == "" || b == "" || c == "") {
+                document.getElementById("fd").innerHTML = "*error in form";
+                document.getElementById("fd").style.color = "red";
+            }
+            else{
+                document.getElementById("fd").innerHTML = "form is successfully submit ";
+                document.getElementById("fd").style.color = "green";
+            }
+        }
+    </script>
 </head>
+
 <body>
     <section>
-    <form action="">
-        <label for="name">Name</label><br>
+        <label for="name" id="">Name</label> <label for="name" id="error1" style="color: red;"></label><br>
         <input type="text" name="" id="name" required>
         <br><br>
-        <label for="email">Email</label><br>
+        <label for="email">Email</label> <label for="email" id="error2" style="color: red;"></label><br>
         <input type="email" name="" id="email" required>
         <br><br>
-        <label for="tel">Telephone</label><br>
+        <label for="tel" id="error">Telephone</label> <label for="tel" id="error3" style="color: red;"></label><br>
         <input type="tel" name="" id="tel" required>
         <br><br>
-        <input type="submit" value="submit">
-    </form>
+        <label for="password-input">password</label><br>
+        <input type="password" id="passwordInput" oninput="checkPasswordStrength()" >
+        <div id="passwordStrength"></div><br>        <button onclick="submit()">submit</button>
+        <h1 id="fd"></h1>
     </section>
+    
+    <script>
+        function checkPasswordStrength() {
+  const password = document.getElementById("passwordInput").value;
+  const strengthIndicator = document.getElementById("passwordStrength");
+
+  // Reset the indicator
+  strengthIndicator.innerHTML = "";
+
+  // Define the criteria for password strength
+  const criteria = [
+    {
+      label: "Weak",
+      color: "red",
+      regex: /^(?=.*[a-z]).{0,5}$/
+    },
+    {
+      label: "Medium",
+      color: "orange",
+      regex: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,10}$/
+    },
+    {
+      label: "Strong",
+      color: "green",
+      regex: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{11,}$/
+    }
+  ];
+
+  // Check the password against the criteria
+  for (const criterion of criteria) {
+    if (criterion.regex.test(password)) {
+      strengthIndicator.innerHTML = criterion.label;
+      strengthIndicator.style.color = criterion.color;
+      break;
+    }
+  }
+}
+
+        /*let user = "banipreet987";
+        let pass = "1234";
+        input1 = prompt("enter username");
+        if (user == input1) {
+            let input2 = prompt("Enter password of " + user);
+            if (pass == input2) {
+                alert("you logged in successfully");
+                console.log("hello world")
+            }
+            else {
+                alert("invalid password")
+            }
+        }
+        else {
+            alert("username is invalid");
+        }*/
+    </script>
 </body>
+
 </html>

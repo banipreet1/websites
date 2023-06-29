@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create a simple password strength indicator with JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+    <style>
+        body {
+  font-family: sans-serif; 
+}
+#password {
+  width: 250px;
+}
+#password label {
+  display: block;
+}
+#password-input {
+  width: 230px;
+  padding: 10px;
+  margin: 10px 0 5px 0;
+}
+#password-strength {
+  height: 5px;
+  width: 100%;
+  display: block;
+  background-color: #ccc;
+}
+#password-strength span {
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  transition: all 500ms ease;
+}
+.strength-0 span {
+  background-color: red;
+  width: 5%;
+}
+.strength-1 span {
+  background-color: orangered;
+  width: 25%;
+}
+.strength-2 span {
+  background-color: orange;
+  width: 50%;
+}
+.strength-3 span {
+  background-color: yellowgreen;
+  width: 75%;
+}
+.strength-4 span {
+  background-color: green;
+  width: 100%;
+}
+    </style>
+  </head>
+  <body>
+    <form>
+      <div id="password">
+        <label for="password-input">Password</label>
+        <input
+          id="password-input"
+          name="password-input"
+          type="password"          
+          required
+        />
+        <div id="password-strength"><span></span></div>
+        <p id="password-feedback"></p>
+      </div>
+    </form>
+    <script>
+        const pwd = document.getElementById("password-input");
+const pwdStrength = document.getElementById("password-strength");
+
+pwd.addEventListener("input", function () {
+  const pwdVal = pwd.value;
+  let result = zxcvbn(pwdVal);  
+  pwdStrength.className = "strength-" + result.score;  
+});
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
