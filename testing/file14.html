@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 1000px;
+        }
+        .load{
+            background-color: rgb(88, 252, 197);
+
+            height: 10px;
+            border-radius: 0px;
+            box-shadow: 0px 2px 10px rgb(151, 240, 210);
+            position: relative;
+            top: 0.1px;
+            width: 0px;
+            border-radius: 0px 10px 15px 0px;
+            animation-name: load;
+            animation-delay: 1s;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes load {
+            0%{width: 0%;}
+            91%{width: 100%;}
+            92%{border-radius: 0px 0px 0px 0px; top: 0.1px; width: 100%;}
+            100%{top: -15px; width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <footer> <div class="load"></div></footer>
+</body>
+</html>

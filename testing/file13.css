@@ -45,21 +45,111 @@
         transition: all 1s;
 
 }
-header h2{
+.form h2{
     font-size: 30px;
     margin: 10px;
     text-align: center;
 }
-
+main{
+    margin-top: 100px;
+    height: 1300px;
+}
 .form {
-    background-color: bisque;
+    background-color: rgba(76, 245, 87, 0.501);
     margin: auto;
     width: 680px;
-    height: 1000px;
     padding: 25px;
-    border-radius: 70px;
+    height: 1090px;
+    margin-bottom: 160px;
+    border-radius: 2px;
+    border: 1px solid black;
     box-sizing: border-box;
+    transition: all .5s;
+    
+}
+
+/* plus sign */
+.plus{
+    position: absolute;
+    margin-left: 186px;
+    z-index: 0;
+    margin-top: 300px;
+}
+.vertical , .horizontal{
+    position: absolute;
+    border-radius: 50px;
+    transition: all 1s ;
+}
+.vertical {
+    height: 250px;
+    width: 50px;
+    background-color: whitesmoke;
+    margin-left: 100px;
+}
+.horizontal {
+    width: 250px;
+    height: 50px;
+    background-color: whitesmoke;
+    margin-top: 100px;
+}
+/* input */
+
+.feild{
+    position: absolute;
+    width: 628px;
+    text-align: center;
+}
+.input{
+    margin-top: 25px;
+}
+.input label {
+font-weight: bold;    
+}
+.input input, .input input::placeholder, .input p{
+    background-color: rgba(240, 248, 255, 0);
+    color: rgba(240, 248, 255, 0);
+    text-align: center;
+    border-width: 0px;
     transition: all 1s;
+}
+input[type="text"]{
+
+    color: black;
+
+}
+.apply{
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: aliceblue;
+    opacity: 0;
+    transition: all 1s;
+}
+.apply:active{
+    background-color: white;
+}
+footer{
+    background-color: rgb(37, 61, 161);
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    color: aliceblue;
+    transition: all .5s;
+}
+footer h2{
+    margin-bottom: 20px;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+footer > img{
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+
 }
 
 
@@ -83,8 +173,37 @@ header h2{
 }
 .top:hover img{
     border-radius: 0%;
+    
 }
-.form:hover {
+.form:hover{
     border-radius: 0px;
-    background-color: rgb(255, 195, 122);
+    background-color: rgb(76, 245, 87);
+    border: 5px solid black;
+    height: 1250px;
+    margin-bottom: 0px;
+}
+ .form:hover .plus .vertical ,.form:hover .plus .horizontal {
+    background-color: red;
+}
+
+.form:hover .input input {
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: azure;
+    text-align: center;
+}
+.form:hover .input input::placeholder{
+    color: black;
+    text-align: center;
+}
+.form.input p{
+    color: black;
+}
+.form:hover .apply{
+    opacity: 1;
+}
+footer:hover{
+    background-color: rgb(33, 53, 134);
+
 }
