@@ -1,0 +1,276 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(69, 69, 69);
+    font-weight: bold;
+
+}
+
+body {
+    background-image: url("../../picture/indexbg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    position: absolute;
+    background-color: rgba(0, 255, 255, 0.474);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+header {
+    text-transform: uppercase;
+}
+
+header ul li {
+    float: left;
+    margin-right: 1vw;
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+header ul li a button {
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px;
+    font-size: inherit;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.platform>div {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 61px;
+}
+
+.section>div {
+    width: 500vw;
+    height: 100vh;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.section1 div img {
+    width: 25vw;
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.fa-brands {
+    transition: all .5s;
+}
+
+#element {
+    color: black;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: -10vh;
+
+}
+
+.profile2 a {
+    font-size: 1.3em;
+    padding: 10px;
+    border: 3px solid red;
+    border-radius: 10px;
+    color: red;
+    transition: all .5s;
+}
+
+.profile2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* section2 */
+/* service */
+.work {
+    margin-top: 5vh;
+}
+
+.service .work h2 {
+    text-align: center;
+    font-size: 2.5vw;
+
+}
+
+.workshop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.workshop a img {
+    height: inherit;
+    width: inherit;
+}
+
+.workshop a:nth-child(odd) img {
+    border-radius: 50%;
+    width: 10vw;
+}
+
+.workshop a img {
+    border-radius: 10px;
+    width: 20vw;
+    opacity: 50%;
+    transition: all .5s;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.service >h2 {
+    font-size: 2vw;
+    margin-bottom: 10vh;
+}
+.cards div {
+    text-align: center;
+    width: 30vw;
+    transition: all .5s;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+}
+.cards div h2{
+    font-size: 2.5vw;    
+}
+.cards i {
+    font-size: 2.5vw;
+}
+.cards .lang1 {
+    color: rgb(228, 89, 50);
+}
+.cards .lang2 {
+    color: rgb(21, 114, 182);
+}
+.cards .lang3 {
+    color: rgb(245, 222, 25);
+}
+.cards div img{
+    width: 15vw;
+    transition: all .5s;
+}
+.my_work{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3vw;
+}
+#website h2{
+    font-size: 5vw;
+    text-align: center;
+}
+.my_work > div{
+    width: 25vw;
+    height: 75vh;
+border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.519);
+}
+.myweb iframe{
+    height: inherit;
+    width: inherit;
+    border-radius: 10px;
+}
+.myapp h3{
+    text-align: center;
+}
+
+
+/* tempoary style */
+
+
+.platform div:nth-child(4) {
+    background-color: chartreuse;
+}
+
+.section1 img {
+    width: 100px;
+}
+
+
+
+/* transition */
+.cards div:hover{
+background-color: rgba(240, 248, 255, 0.399);
+}
+.cards div:hover img{
+    width: 20vw;
+}
+header ul li:hover {
+    background-color: rgba(240, 248, 255, 0.47);
+}
+
+.profile2 a:hover {
+    color: rgb(202, 202, 202);
+    background-color: rgb(255, 0, 0);
+    box-shadow: 10px 10px 10px rgba(253, 62, 62, 0.405),
+        -10px -10px 10px rgba(253, 62, 62, 0.405),
+        -10px 10px 10px rgba(253, 62, 62, 0.405),
+        10px -10px 10px rgba(253, 62, 62, 0.405);
+}
+
+.workshop a img:hover {
+    opacity: 1;
+}
+
+
+
+
+/* fa brand */
+.fa-brands {
+    font-size: 5vw;
+}
+
+.profile:hover .fa-html5 {
+    color: rgb(228, 79, 38);
+}
+
+.profile:hover .fa-css3-alt {
+    color: rgb(55, 101, 134);
+}
+
+.profile:hover .fa-js {
+    color: rgb(245, 222, 25);
+}
+
+.profile:hover .fa-bootstrap {
+    color: rgb(108, 8, 230);
+}
+
+.profile:hover .fa-sass {
+    color: rgb(207, 100, 154);
+}
+
+.com-lang {
+    margin-top: 15vh;
+    word-spacing: 5vw;
+}
