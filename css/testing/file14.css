@@ -4,7 +4,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Bebas Neue', sans-serif;
-    color: rgb(69, 69, 69);
+    color: rgb(94, 83, 83);
     font-weight: bold;
 
 }
@@ -46,10 +46,15 @@ header ul li a button {
     border: 0px;
     font-size: inherit;
 }
-#nav1{
+
+#nav1 {
     background-color: black;
 }
-#nav-font1{
+
+#nav-font1 {
+    color: white;
+}
+h1{
     color: white;
 }
 
@@ -155,10 +160,12 @@ header ul li a button {
     justify-content: space-evenly;
 
 }
-.service >h2 {
+
+.service>h2 {
     font-size: 2vw;
     margin-bottom: 10vh;
 }
+
 .cards div {
     text-align: center;
     width: 30vw;
@@ -166,83 +173,64 @@ header ul li a button {
     padding: 1vh 1vw;
     border-radius: 10px;
 }
-.cards div h2{
-    font-size: 2.5vw;    
+
+.cards div h2 {
+    font-size: 2.5vw;
 }
+
 .cards i {
     font-size: 2.5vw;
 }
+
 .cards .lang1 {
     color: rgb(228, 89, 50);
 }
+
 .cards .lang2 {
     color: rgb(21, 114, 182);
 }
+
 .cards .lang3 {
     color: rgb(245, 222, 25);
 }
-.cards div img{
+
+.cards div img {
     width: 15vw;
     transition: all .5s;
 }
-.my_work{
+
+.my_work {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 3vw;
 }
-#website h2{
+
+#website h2 {
     font-size: 5vw;
     text-align: center;
 }
-.my_work > div{
+
+.my_work>div {
     width: 25vw;
     height: 75vh;
-border-radius: 10px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.519);
 }
-.myweb iframe{
+
+.myweb iframe {
     height: inherit;
     width: inherit;
     border-radius: 10px;
 }
-.myapp h3{
+
+.myapp h3 {
     text-align: center;
 }
 
 
-/* tempoary style */
 
 
-.platform div:nth-child(4) {
-    background-color: chartreuse;
-}
-
-
-
-/* transition */
-.cards div:hover{
-background-color: rgba(240, 248, 255, 0.399);
-}
-.cards div:hover img{
-    width: 20vw;
-}
-header ul li:hover {
-    background-color: rgba(240, 248, 255, 0.47);
-}
-
-.profile2 a:hover {
-    color: rgb(202, 202, 202);
-    background-color: rgb(255, 0, 0);
-    box-shadow: 10px 10px 10px rgba(253, 62, 62, 0.405),
-        -10px -10px 10px rgba(253, 62, 62, 0.405),
-        -10px 10px 10px rgba(253, 62, 62, 0.405),
-        10px -10px 10px rgba(253, 62, 62, 0.405);
-}
-
-.workshop a img:hover {
-    opacity: 1;
-}
 
 
 
@@ -277,6 +265,122 @@ header ul li:hover {
     word-spacing: 5vw;
 }
 
+.section4 .find-me {
+    font-size:  5vw;
+    text-align: center;
+    
+}
+.section4 .media {
+    padding: 1vh;
+    transform: skew(45deg);
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.616);
+    width: 30vw;
+}
+.section4 .media p{
+    text-decoration: underline;
+}
+.section .media *{
+    transform: skew(315deg);
+}
+.section .media h2{
+    font-size: 3em;
+}
+.section4 .freelance{
+    transform: skew(315deg);
+}
+.section4 .freelance *{
+    transform: skew(45deg);
+}
+.section4 .freelance ul li {
+    transform: skew(0deg);
+    text-decoration: underline;
+}
+.section4 .social {
+    width: 80vw;
+    margin: auto;
+    overflow: visible;
+    height: 38vh;
+}
+
+.section4 .social .email{
+    float: left;
+    clear: both;
+    
+}
+.section4 .social .freelance{
+    float: right;
+    clear: both;
+    
+}
+.social-media {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+}
+.social-media a div {
+    background-color: rgba(240, 248, 255, 0);
+    text-align: center;
+    padding: 10px;
+    border-radius: 1vw;
+    transition: all .5s;
+}
+.social-media a{
+    display: block;
+    width: 8vw;
+    transition: all .5s;
+}
+.social-media a div img{
+    background-color: aqua;
+    border-radius: 50%;
+    width: 6vw;
+    opacity: 50%;
+    transition: all .5s;
+}
+.social-media a div h4{
+    opacity: 0%;
+    transition: all .5s;
+}
+
+
+/* transition */
+.cards div:hover {
+    background-color: rgba(240, 248, 255, 0.399);
+}
+
+.cards div:hover img {
+    width: 20vw;
+}
+
+header ul li:hover {
+    background-color: rgba(240, 248, 255, 0.47);
+}
+
+.profile2 a:hover {
+    color: rgb(202, 202, 202);
+    background-color: rgb(255, 0, 0);
+    box-shadow: 10px 10px 10px rgba(253, 62, 62, 0.405),
+        -10px -10px 10px rgba(253, 62, 62, 0.405),
+        -10px 10px 10px rgba(253, 62, 62, 0.405),
+        10px -10px 10px rgba(253, 62, 62, 0.405);
+}
+
+.workshop a img:hover {
+    opacity: 1;
+}
+.social-media a div:hover {
+    background-color: rgba(240, 248, 255, 0.425);
+}
+.social-media a div:hover img{
+    opacity: 100%;
+}
+.social-media a div:hover h4{
+    opacity: 100%;
+}
+
 
 
 @media screen and (max-width: 480px) {
@@ -295,71 +399,119 @@ header ul li:hover {
         background-color: rgba(221, 155, 138, 0.53);
         flex-direction: column;
     }
-    .platform > div{
+
+    .platform>div {
         padding-top: 80px;
     }
+
     .profile {
         flex-direction: column-reverse;
         gap: 4vh;
     }
 
-    .profile > .mypic {
+    .profile>.mypic {
         width: 50vw;
     }
-    .profile > div >h2:nth-child(1){
-        font-size: 7vw;
-    }
-    .profile > div >h2:nth-child(2){
-        margin-top: 2vh;
-    }
-    header ul li a button{
-        color: rgb(69, 69, 69);
-    } 
-    .service .work > h2{
+
+    .profile>div>h2:nth-child(1) {
         font-size: 7vw;
     }
 
-    .service h2{
+    .profile>div>h2:nth-child(2) {
+        margin-top: 2vh;
+    }
+
+    header ul li a button {
+        color: rgb(69, 69, 69);
+    }
+
+    .service .work>h2 {
+        font-size: 7vw;
+    }
+
+    .service h2 {
         font-size: 5vw;
     }
-    .work .workshop a img{
-     width: 20vw;   
-     opacity: 1;
+
+    .work .workshop a img {
+        width: 20vw;
+        opacity: 1;
     }
+
     .service .cards {
         display: grid;
         grid-template-columns: auto;
 
     }
-    .service .cards div{
+
+    .service .cards div {
         width: 90vw;
         background-color: rgba(240, 248, 255, 0.399);
         margin-bottom: 2vw;
 
     }
+
     .service .cards div img {
         float: left;
         width: auto;
         height: 15vh;
         transition: none;
     }
+
     .service .cards div h2 {
         font-size: 5vw;
     }
-    .service .cards div i{
+
+    .service .cards div i {
         font-size: 5vw;
     }
-    .service > h2 {
+
+    .service>h2 {
         margin-bottom: 5vw;
     }
+
+    #website>h2 {
+        margin-top: 15px;
+        font-size: 7.5vh;
+    }
+
+    .my_work {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my_work .myapp,
+    .my_work .myweb {
+        width: 90%;
+        height: 30vh;
+    }
+
+    .my_work .myweb {
+        margin-bottom: 7vh;
+    }
+
+    .myapp h3 {
+        font-size: 9vw;
+    }
+
+    .section3 .my_work .myweb iframe {
+        width: 90vw;
+        height: inherit;
+    }
     
-    
-    
+    .section4 .find-me {
+        font-size:  20vw;
+        
+    }
+
+
+
     /* fa brands */
     .fa-brands {
         font-size: 10vw;
     }
-    .fa-wordpress{
+
+    .fa-wordpress {
         color: rgb(3, 97, 132);
     }
 
@@ -383,4 +535,51 @@ header ul li:hover {
         color: rgb(207, 100, 154);
     }
 
+}
+
+
+
+
+
+
+/* animation */
+
+@keyframes html {
+    to {
+        color: rgb(69, 69, 69);
+    }
+
+    from {color: rgb(228, 79, 38);}
+}
+
+@keyframes css {
+    to {
+        color: rgb(69, 69, 69);
+    }
+
+    from {color: rgb(55, 101, 134);}
+}
+
+@keyframes js {
+    to {
+        color: rgb(69, 69, 69);
+    }
+
+    from {color: rgb(245, 222, 25);}
+}
+
+@keyframes boot {
+    to {
+        color: rgb(69, 69, 69);
+    }
+
+    from {color: rgb(108, 8, 230);}
+}
+
+@keyframes sass {
+    to {
+        color: rgb(69, 69, 69);
+    }
+
+    from {color: rgb(207, 100, 154);}
 }
