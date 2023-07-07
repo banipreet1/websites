@@ -218,10 +218,6 @@ border-radius: 10px;
     background-color: chartreuse;
 }
 
-.section1 img {
-    width: 100px;
-}
-
 
 
 /* transition */
@@ -279,4 +275,69 @@ header ul li:hover {
 .com-lang {
     margin-top: 15vh;
     word-spacing: 5vw;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    * {
+        color: blueviolet;
+    }
+
+    body {
+        background-image: url("../../picture/indexbg-mobile.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    header {
+        background-color: rgba(167, 100, 83, 0.468);
+        flex-direction: column;
+    }
+    .platform > div{
+        padding-top: 80px;
+    }
+    .profile {
+        flex-direction: column-reverse;
+        gap: 4vh;
+    }
+
+    .profile > img {
+        width: 5vw;
+    }
+    .profile > div >h2:nth-child(1){
+        font-size: 7vw;
+    }
+    .profile > div >h2:nth-child(2){
+        margin-top: 5vh;
+    }
+
+
+
+    /* fa brands */
+    .fa-brands {
+        font-size: 10vw;
+    }
+
+    .fa-html5 {
+        color: rgb(228, 79, 38);
+    }
+
+    .fa-css3-alt {
+        color: rgb(55, 101, 134);
+    }
+
+    .fa-js {
+        color: rgb(245, 222, 25);
+    }
+
+    .fa-bootstrap {
+        color: rgb(108, 8, 230);
+    }
+
+    .fa-sass {
+        color: rgb(207, 100, 154);
+    }
+
 }
