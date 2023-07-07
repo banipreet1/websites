@@ -303,8 +303,8 @@ header ul li:hover {
         gap: 4vh;
     }
 
-    .profile > img {
-        width: 5vw;
+    .profile > .mypic {
+        width: 40vw;
     }
     .profile > div >h2:nth-child(1){
         font-size: 7vw;
