@@ -329,6 +329,7 @@ h1{
     transition: all .5s;
 }
 .social-media a{
+    margin-top: 20vh;
     display: block;
     width: 8vw;
     transition: all .5s;
