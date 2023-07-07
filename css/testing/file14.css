@@ -292,7 +292,7 @@ header ul li:hover {
     }
 
     header {
-        background-color: rgba(167, 100, 83, 0.468);
+        background-color: rgba(221, 155, 138, 0.53);
         flex-direction: column;
     }
     .platform > div{
@@ -310,14 +310,57 @@ header ul li:hover {
         font-size: 7vw;
     }
     .profile > div >h2:nth-child(2){
-        margin-top: 5vh;
+        margin-top: 2vh;
+    }
+    header ul li a button{
+        color: rgb(69, 69, 69);
+    } 
+    .service .work > h2{
+        font-size: 7vw;
     }
 
+    .service h2{
+        font-size: 5vw;
+    }
+    .work .workshop a img{
+     width: 20vw;   
+     opacity: 1;
+    }
+    .service .cards {
+        display: grid;
+        grid-template-columns: auto;
 
+    }
+    .service .cards div{
+        width: 90vw;
+        background-color: rgba(240, 248, 255, 0.399);
+        margin-bottom: 2vw;
 
+    }
+    .service .cards div img {
+        float: left;
+        width: auto;
+        height: 15vh;
+        transition: none;
+    }
+    .service .cards div h2 {
+        font-size: 5vw;
+    }
+    .service .cards div i{
+        font-size: 5vw;
+    }
+    .service > h2 {
+        margin-bottom: 5vw;
+    }
+    
+    
+    
     /* fa brands */
     .fa-brands {
         font-size: 10vw;
+    }
+    .fa-wordpress{
+        color: rgb(3, 97, 132);
     }
 
     .fa-html5 {
