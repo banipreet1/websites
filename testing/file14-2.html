@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d700e2f8db.js" crossorigin="anonymous"></script>
+    <title>nav</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        header{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow: auto;
+
+        }
+        header li {
+            list-style: none;
+            padding: 21px;
+            float: left;
+        }
+        header h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header div{
+            display: flex;
+            align-items: center;
+        }
+        
+        
+        header a{
+            color: black;
+            text-decoration: none;
+        }
+        header img {
+            width: 100px;
+        }
+        header li:hover{
+            background-color: rgba(240, 248, 255, 0.416);
+        }
+
+
+        /* faltu */
+        /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+main div{
+    height: 120vw;
+}
+main div:nth-child(even){
+    background-color: pink;
+}
+    </style>
+    <script>
+  confirm("hello world")
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <div>
+
+            <img src="http://1000logos.net/wp-content/uploads/2016/10/Arsenal-Logo.png" alt="">
+            <h1>Arsenal</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="#nav1"><li><i class="fa-solid fa-house"></i></li></a>
+                <a href="#nav2"><li><i class="fa-solid fa-envelope"></i></li></a>
+                <a href="#nav3"><li><i class="fa-sharp fa-solid fa-magnifying-glass"></i></li></a>
+                <a href="#nav4"><li><i class="fa-solid fa-address-card"></i></li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="col1" id="nav1">fsdsaf</div>
+        <div class="col2" id="nav2">adsgdas</div>
+        <div class="col3" id="nav3">fdssadgS</div>
+        <div class="col4" id="nav4">FGDAGF</div>
+    </main>
+</body>
+</html>
