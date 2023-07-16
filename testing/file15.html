@@ -5,19 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nav bar</title>
     <style>
-        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 90%;
+            border: 1px dotted;
+            margin: auto;
+            display: flex;
+            overflow: hidden;
+            height: 450px;
+        }
+        section > div{
+            width: 50%;
+        }
+        .sec1 ul a{
+            color: black;
+            list-style: none;
+            text-decoration: none;
+        }
+        .sec1 {
+            background-color: tomato;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px ;
+        }
+        .sec1 li{
+            padding: 10px 15px;
+            transition: all .5s;
+            text-align: center;
+        }
+        .sec2{
+            overflow: hidden;
+        }
+        .sec1 li:hover{
+            background-color: rgba(240, 248, 255, 0.421);
+        }
+        .sec2 > div > div{
+            height: 450px;
+            overflow: hidden;
+            background-color: cadetblue;
+            text-align: center;
+            padding-top: 15px;
+            
+        }
+        .sec2 div h2:nth-child(1) {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        input{
+            text-align: center;
+            border: 0px ;
+            border-bottom: 2px solid black;
+            background-color: rgba(240, 248, 255, 0);
+            transition: all 0.5s;
+            height: 35px;
+            width: 150px;
+            
+        }
+        input:hover{
+            border-radius: 10px;
+            background-color: rgba(240, 248, 255, 0.416);
+        }
+        .sec2 div div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .sec2 div div h2:nth-child(2){
+            font-size: 70px;
+            
+
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+        <h1>calculator</h1>
     </header>
+    <main>
+        <section>
+            <!-- add sub mul div root power  -->
+            <div class="sec1">
+                <ul>
+                    <a href="#cal1"><li>Addition</li></a>
+                    <a href="#cal2"><li>Subtraction</li></a>
+                    <a href="#cal3"><li>Multiplication</li></a>
+                    <a href="#cal4"><li>Division</li></a>
+                    <a href="#cal5"><li>Power/Root</li></a>
+                    <a href="#cal6"><li></li></a>
+                    <a href="#"><li></li></a>
+                </ul>
+            </div>
+            <div class="sec2">
+                <div>
+                <div id="cal1">
+                    <h2>Addition</h2>
+                    <input type="number" name="" id="add1" onkeyup="add()" placeholder="write a number">
+                    <h3>&plus;</h3>
+                    <input type="number" name="" id="add2" onkeyup="add()" placeholder="write a number">
+                    <h2 id="ans1">...</h2>
+
+                </div>
+                <div id="cal2">
+                    <h2>Subtraction</h2>
+                    <input type="number" name="" id="sub1"  onkeyup="sub()"  placeholder="write a number">
+                    <h3></h3>
+                    <input type="number" name="" id="sub2" onkeyup="sub()" placeholder="write a number">
+                    <h2 id="ans2"></h2>
+                </div>
+                <div id="cal3">
+                    <h2>Multiplication</h2>
+                    <input type="number" name="" id="mul1" onkeyup="mul()" placeholder="write a number">
+                    <h3></h3>
+                    <input type="number" name="" id="mul2" onkeyup="mul()" placeholder="write a number">
+                    <h2 id="ans3"></h2>
+                </div>
+                <div id="cal4">
+                    <h2>Division</h2>
+                    <input type="number" name="" id="div1" onkeyup="div()" placeholder="write a number">
+                    <h3></h3>
+                    <input type="number" name="" id="div2" onkeyup="div()" placeholder="write a number">
+                    <h2 id="ans4"></h2>
+                </div>
+                <div id="cal5">
+                    <h2>Power/Root</h2>
+                    <input type="number" name="" id="power" onkeyup="power()" placeholder="write a number">
+                    <h3>power</h3>
+                    <h2 id="ans5">...</h2>
+                    <h2 id="ans5.2">...</h2>
+                    <h2 id="ans5.3">...</h2>
+                    <h3>root</h3>
+                    <h2 id="ans5.4" >...</h2>
+                </div>
+                <div id="cal6">
+                    <h2></h2>
+                    <h2 id="ans6"></h2>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function add(){
+            let z = document.getElementById("add1").value
+            let x = document.getElementById("add2").value
+            document.getElementById("ans1").innerHTML = parseInt(z)+parseInt(x) ;
+        }
+        function sub(){
+
+            
+            let z = document.getElementById("sub1").value
+            let x = document.getElementById("sub2").value
+            document.getElementById("ans2").innerHTML = parseInt(z)-parseInt(x) ;
+        }
+        function mul(){
+            let z = document.getElementById("mul1").value
+            let x = document.getElementById("mul2").value
+            document.getElementById("ans3").innerHTML = parseInt(z)*parseInt(x) ;
+        }
+        function div(){
+            let z = document.getElementById("div1").value
+            let x = document.getElementById("div2").value
+            document.getElementById("ans4").innerHTML = parseInt(z)/parseInt(x) ;
+        }
+        function power(){
+            let z = document.getElementById("power").value
+            document.getElementById("ans5").innerHTML = parseInt(z)**2 ;
+            document.getElementById("ans5.2").innerHTML = parseInt(z)**3 ;
+            document.getElementById("ans5.3").innerHTML = parseInt(z)**4 ;
+            document.getElementById("ans5.4").innerHTML = parseInt(Math.sqrt(z)) ;
+        }
+    </script>
 </body>
 </html>
