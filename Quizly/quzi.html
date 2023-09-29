@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizly.com</title>
+    <link rel="shortcut icon" href="css/quizly.png" type="image/x-icon">
+    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        @font-face {
+            font-family: myfont;
+            src: url(css/CroissantOne-Regular.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: myfont;
+            color: rgb(209, 246, 152);
+            transition-timing-function: ease;
+        }
+         body{
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+         }
+
+        header {
+            background-color: greenyellow;
+            height: 5vh;
+            width: 100%;
+            position: fixed;
+            text-align: center;
+            font-size: 1.5vh;
+            transition: all 1s;
+            display: flex;
+            justify-content: space-between;
+            padding: 0vw 1vw 0vw 1vw;
+            box-sizing: border-box;
+            align-items: center;
+
+        }
+
+        header:hover {
+            box-shadow: 0px 1px 30px rgb(214, 252, 157);
+        }
+
+        h1 {
+            color: #17181a;
+        }
+        #theam{
+            background-color: transparent;
+            border: 0px;
+        }
+        #theam * {
+            color: #111112;
+        }
+
+        main {
+            padding-top: 5vh;
+            background-color: #17181a;
+            height: 95vh;
+        }
+
+        #homepage {
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            max-height: 100%;
+            overflow: hidden;
+            transition: all 2.5s;
+            transition-delay: 0s;
+        }
+
+        #homepage button,
+        #exit {
+            color: #17181a;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            border-radius: 33px;
+            transition: all .5s;
+            border: 0px solid;
+            margin-top: 10vh;
+        }
+
+        #homepage button:hover,
+        #exit:hover {
+            background-color: rgb(182, 255, 71);
+            box-shadow: 5px 5px 10px rgb(224, 255, 178),
+                5px -5px 10px rgb(224, 255, 178),
+                -5px -5px 10px rgb(224, 255, 178),
+                -5px 5px 10px rgb(224, 255, 178);
+        }
+
+        .question {
+            height: 50vh;
+            overflow: hidden;
+            max-height: 0%;
+            transition: all 2.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            transition-delay: 2.5s;
+        }
+        .question h2{
+            text-align: center;
+            font-size: 1.5rem;
+            width: 80%;
+        }
+        .question input{
+            background-color: rgba(240, 248, 255, 0);
+            border-width: 0px;
+            border-bottom: 2px solid rgb(182, 255, 71);
+            width: 50%;
+            text-align: center;
+            transition: all .5s;
+            height: 5vh;
+            
+        }
+        .question input:focus{
+            border: 2px solid rgb(182, 255, 71);
+        }
+        .question button{
+            padding: 10px;
+            margin: 0px;
+            border: 2px solid black;
+            background-color: rgba(240, 248, 255, 0);
+            transition: all .5s;
+        }
+        .question button:hover{
+            border:2px solid rgb(182, 255, 71);
+            color: #17181a;
+            background-color: rgb(182, 255, 71);
+            box-shadow: 5px 5px 10px rgb(224, 255, 178),
+                5px -5px 10px rgb(224, 255, 178),
+                -5px -5px 10px rgb(224, 255, 178),
+                -5px 5px 10px rgb(224, 255, 178);
+            border-radius: 50px;
+        }
+
+        #status {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-evenly;
+            margin-top: 25vh;
+            padding: 0vw 1vw;
+            box-sizing: border-box;
+            max-height: 0%;
+            overflow: hidden;
+            transition: all 4s;
+
+        }
+
+        #exitlocation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            margin-top: 100vh;
+            transition: all 1s;
+        }
+
+
+
+        #rnw{
+            top: 15vh;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #rnw div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3vh;
+            background-color: red;
+            width: 15vh;
+            height: 15vh;
+            border-radius: 50%;
+            opacity: 0;
+            position: fixed;
+            transition: all 1s;
+        }
+        #rnw #right {
+            background-color: greenyellow;
+        }
+        #rnw p{
+            color: #17181a;
+        }
+
+        .sound{
+            display: none;
+        }
+
+        #box{
+            position: fixed;
+            background-color: #161718;
+            padding: 2vh 0vw 2vw 1vw;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 10px 4px #111112;
+            width: 25vw;
+            margin-top: 2vh;
+            transition: all 1s;
+        }
+
+        .author{
+            position: fixed;
+            bottom: 5px;
+            left: 5px;
+
+        }
+        .author a{
+            text-decoration: none;
+            color: orange;
+
+        }
+        .author a:hover{
+            text-decoration: underline;
+ 
+        }
+        
+        
+        
+    </style>
+    <script src="qna.js"></script>
+</head>
+
+<body>
+    <header>
+        <div></div>
+        <h1 id="hydra">Quizly.com</h1>
+        <button id="theam" ><span class="material-symbols-outlined" style="color: #111112;">light_mode</span></button>
+    </header>
+    <main>
+        <audio src="css/right.mp3"  class="sound" id="yes"></audio>
+        <audio src="css/wrong.mp3" class="sound" id="no"></audio>
+        <div id="rnw">
+            <div id="right"><p>RIGHT</p></div>
+            <div id="wrong"><p>WRONG</p></div>
+
+        </div>
+
+        <div id="box">
+
+            <h3>Total Points:-  <span id="rpw" >0</span> out of <span id="totalq">0</span>Q </h3>
+            <h4 style="color: green;">Right Answer:- &nbsp;<span id="righta">0</span> &nbsp;&nbsp;&nbsp; <span id="tolrans">0</span> (Total)</h4>
+            <h4 style="color: red;">Wrong Answer:- &nbsp;<span id="wronga">0</span> &nbsp;&nbsp; <span id="tolwans">0</span> (Total)</h4>
+            <h5>Performance Overall:- <span id="Performod">0</span>%</h5>
+        </div>
+
+            <div id="status">
+                <h2 class="point-position" onmouseover="callme()" onmouseout="callout()" onclick="callyou()" id="point">Points: <span id="points"></span></h2>
+                <h2 id="qdetail"><span>Question no. </span><span id="qno"></span></h2>
+        </div>
+        <div id="homepage">
+            <h2 style="font-size: 12vh;">Quizly.com</h2>
+            <p style="font-size: 6vh;">Improve your knowldge</p>
+            <button onclick="start()" id="start">Start <span class="material-symbols-outlined" style="color: #17181a;">
+                arrow_forward
+            </span></button>
+            <button onclick="start()">Restart <span class="material-symbols-outlined" style="color: #17181a;">
+                    restart_alt
+                </span></button>
+        </div>
+        <div class="question" id="question">
+            <h2 id="ques"></h2>
+            <input type="text" name="" id="answer">
+            <button onclick="plus()">SUBMIT</button>
+            
+        </div>
+    
+        <hr>
+        <p id="exitlocation">
+            <button onclick="exit()" id="exit">Exit <span class="material-symbols-outlined" style="color: #17181a;">
+                    close
+                </span></button>
+        </p>
+        <h4 class="author"><a href="">Made By Bani Preet</a></h4>
+    </main>
+</body>
+<script>
+        var r = Math.round(Math.random() * 10); 
+        var q = que[r]
+        var a = ans[r]
+        console.log(r)
+
+    var point = 0
+    var qno = 1
+
+    var yesa = 0
+    var noa = 0
+
+    var trans = 0
+    var twans = 0
+    var tq = 0
+
+    var input = document.getElementById('answer');
+    input.addEventListener('keypress',function good() {
+        if(event.key === "Enter"){
+            plus()
+        }
+    })
+
+
+    function start() {
+        yesa = 0
+        noa = 0
+
+        document.getElementById('homepage').style.maxHeight = '0%';
+        document.getElementById('point').style.display = 'block';
+        document.getElementById('status').style.maxHeight = '100%';
+        document.getElementById('homepage').style.transitionDelay = '0s';
+        document.getElementById('question').style.transitionDelay = '3s';
+        document.getElementById('question').style.maxHeight = '100%';
+        document.getElementById('exitlocation').style.transitionDelay = '3.5s';
+        document.getElementById('exitlocation').style.marginTop = '-5vh';
+        document.getElementById('qno').innerText = qno;
+        document.getElementById('points').innerText = point;
+        document.getElementById('ques').innerText = q;
+        document.getElementById('wronga').innerText = noa;
+        document.getElementById('righta').innerText = yesa;
+        document.getElementById('box').style.marginLeft = '-35vw';
+        document.getElementById('answer').value = "";
+        input.focus()
+        ++tq;
+        document.getElementById('totalq').innerText = tq;
+        
+        
+    }
+    function exit() {
+        document.getElementById('start').style.display = 'none';
+        document.getElementById('status').style.maxHeight = '0%';
+        document.getElementById('homepage').style.maxHeight = '100%';
+        document.getElementById('homepage').style.transitionDelay = '2.5s';
+        document.getElementById('question').style.maxHeight = '0%';
+        document.getElementById('question').style.transitionDelay = '0s';
+        document.getElementById('exitlocation').style.transitionDelay = '0s';
+        document.getElementById('exitlocation').style.marginTop = '100vh';
+        document.getElementById('box').style.marginLeft = '0vw';
+        
+        point = 0;
+        qno = 1;
+
+        yesa = 0
+        noa = 0
+    }
+    
+    function plus() {
+        let answer = document.getElementById('answer').value
+        if (answer ==  a) {
+            ++point;
+            document.getElementById('yes').play();
+            document.getElementById('right').style.opacity = "1";
+            ++yesa;
+            ++trans;
+
+            document.getElementById('righta').innerText = yesa;
+            document.getElementById('tolrans').innerText = yesa;
+            setTimeout(() => {
+                document.getElementById('right').style.opacity = "0";
+            }, 2000);
+            document.getElementById('points').style.color = 'green'
+           
+        } else {
+            ++noa;
+            document.getElementById('wronga').innerText = noa;
+            --point;
+            ++twans
+            document.getElementById('tolwans').innerText = twans;
+            document.getElementById('points').style.color = "red";
+            document.getElementById('no').play();
+            document.getElementById('wrong').style.opacity = "1";
+            setTimeout(() => {
+                document.getElementById('wrong').style.opacity = "0";
+            }, 2000);
+            
+        }
+        setTimeout(() => {
+                document.getElementById('points').style.color = 'rgb(209, 246, 152)';
+            }, 1000);
+
+        document.getElementById('box').style.marginLeft = "0vw"
+        setTimeout(() => {
+            document.getElementById('box').style.marginLeft = "-35vw"
+        }, 2000);
+
+        ++qno
+        var totalp = trans - twans
+        document.getElementById('rpw').innerText = totalp;
+        document.getElementById('totalq').innerText = trans + twans;
+
+        var tol = trans/totalp * 100
+        document.getElementById('Performod').innerText = Math.round(tol) ;    
+
+        document.getElementById('qno').innerText = qno ;
+        document.getElementById('points').innerText = point ;
+
+         r = Math.round(Math.random() * 10);
+         q = que[r];
+         a = ans[r];
+        console.log("answer is "+a);
+        document.getElementById('ques').innerText = q;
+        document.getElementById('answer').value = "";
+        return;
+
+    }
+
+    function callme() {
+       document.getElementById('box').style.marginLeft = "0vw"
+    }
+    function callout() {
+       document.getElementById('box').style.marginLeft = "-35vw"
+    }
+    
+    document.getElementById('theam').onclick = function theam() {
+        if (document.getElementById('theam').innerHTML = '<span class="material-symbols-outlined">light_mode</span>') {
+            console.log('hello')
+            document.getElementById('theam').innerHTML = '<span class="material-symbols-outlined">dark_mode</span>'
+        } else if  (document.getElementById('theam').innerHTML = '<span class="material-symbols-outlined">dark_mode</span>') {
+            console.log('wth');
+            document.getElementById('theam').innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
+        } else {
+ 
+        }
+        
+    }
+    
+   
+
+</script>
+
+</html>
